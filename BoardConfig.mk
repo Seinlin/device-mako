@@ -78,6 +78,16 @@ ifeq ($(HOST_OS),linux)
 endif
 WITH_DEXPREOPT_BOOT_IMG_ONLY ?= true
 
+# Recovery
+ENABLE_LIBRECOVERY := true
+
+# librecovery
+RECOVERY_EXTERNAL_STORAGE := /data/media/0
+
+SYSTEM_FS_TYPE        := ext4
+SYSTEM_PARTITION_TYPE := EMMC
+SYSTEM_LOCATION       := /dev/block/platform/msm_sdcc.1/by-name/system
+
 TARGET_RECOVERY_FSTAB = device/lge/mako/fstab.mako
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 23068672 # 22M
