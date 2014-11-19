@@ -35,9 +35,9 @@ install_blobs() {
 }
 
 MAKO_BLOBS="
-    broadcom-mako-kot49h-18b58457.tgz
-    lge-mako-kot49h-f59c98be.tgz
-    qcom-mako-kot49h-e7a74920.tgz
+    broadcom-mako-lrx21t-d807f138.tgz
+    lge-mako-lrx21t-0f943ea1.tgz
+    qcom-mako-lrx21t-98c5883c.tgz
     "
 
 CSUM_LIST="$PWD/blob-shasums"
